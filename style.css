@@ -1,0 +1,9 @@
+body {
+    font-family: 'Varela', sans-serif; ;
+}
+
+.topPage {
+    display: flex;
+    justify-content: space-between;
+
+}
