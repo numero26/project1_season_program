@@ -36,6 +36,7 @@ header {
     text-align: center;
     width: 250px;
     margin: 0 auto;
+    
 }
 
 h1 {
@@ -46,6 +47,7 @@ h1 {
 h2 {
     font-size: 1rem;
 }
+
 
 h3 {
     font-size: 0.8rem;
@@ -69,7 +71,7 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px){
-
+    
     .title, .introduction {
         width : 600px;
     }
@@ -88,10 +90,51 @@ h3 {
     .textIntro {
         font-size: 0.9rem
     }
+    
 }
 
-@media only screen and (min-width: 1024px) {
+/* partie projet 1 */
+    
+    
+.projet{
+    color :white;
+    height : 400px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-image: url(./images/Vector_4.png);
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    
+}
+.article{
+    align-items: center;
+   
+}
+.description_projet {
+    margin-top: 10px;
+    margin-bottom: 0;
+    
+}
+.projetFictif ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: symbols(•);
+    
+}
+/*.projetFictif li::before{
+    margin-right: 2px;
+    font-size: 5px;
+    content: "•";
+   list-style: symbols(•);
+}*/
 
+@media only screen and (min-width: 1024px) {
+    
     .title, .introduction {
         width : 1000px;
     }
