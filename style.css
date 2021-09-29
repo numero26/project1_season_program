@@ -62,3 +62,7 @@ h3 {
 .textIntro {
     font-size: 0.7rem;
 }
+
+#titreIntro {
+    line-height: 1.5rem;
+}
