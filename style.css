@@ -24,7 +24,7 @@ header {
 
 }
 
-ul {
+.season {
     font-size: 20px;
     list-style-type: none;
     border-left: white solid 1px;
@@ -68,7 +68,7 @@ h3 {
     line-height: 1.5rem;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px){
 
     .title, .introduction {
         width : 600px;
@@ -78,6 +78,28 @@ h3 {
     }
     h1 {
         font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .textIntro {
+        font-size: 0.9rem
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .title, .introduction {
+        width : 1000px;
+    }
+    .introduction {
+        padding-top: 20px;
+    }
+    h1 {
+        font-size: 4rem;
     }
     h2 {
         font-size: 1.8rem;
