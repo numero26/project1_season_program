@@ -19,9 +19,8 @@ header {
 }
 
 #logo {
-	height: 35px;  
+    height: 35px;
     width: auto;
-
 }
 
 .season {
@@ -29,7 +28,6 @@ header {
     list-style-type: none;
     border-left: white solid 1px;
     padding-left: 20px;
-
 }
 
 .title {
@@ -68,10 +66,10 @@ h3 {
     line-height: 1.5rem;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-
-    .title, .introduction {
-        width : 600px;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .title,
+    .introduction {
+        width: 600px;
     }
     .introduction {
         padding-top: 20px;
@@ -91,9 +89,9 @@ h3 {
 }
 
 @media only screen and (min-width: 1024px) {
-
-    .title, .introduction {
-        width : 1000px;
+    .title,
+    .introduction {
+        width: 1000px;
     }
     .introduction {
         padding-top: 20px;

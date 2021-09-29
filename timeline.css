@@ -1,0 +1,101 @@
+.timeline-event,
+.timeline-title,
+.timeline-text {
+    margin: 0;
+}
+
+.timeline * {
+    box-sizing: border-box;
+}
+
+.timeline {
+    --bullet-size: 1.5rem;
+    --bullet-outline: 3px;
+    --line-width: 2px;
+    --line-length: calc(50% - (var(--bullet-size) / 2));
+    --color-main: #F65454;
+    --color-secondary: #888888;
+    --bullet-rotation: 180deg;
+    --text-padding: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-auto-rows: 4rem;
+}
+
+.timeline-line {
+    margin: auto;
+    width: var(--line-width);
+    height: var(--line-length);
+    background-color: var(--color-main);
+}
+
+.timeline-circle {
+    --fill-percent: 100%;
+    margin: auto;
+    border: var(--bullet-outline) solid var(--color-main);
+    border-radius: 100%;
+    width: var(--bullet-size);
+    height: var(--bullet-size);
+    background: linear-gradient(var(--bullet-rotation), var(--color-main) var(--fill-percent), transparent 0%);
+}
+
+.timeline-start,
+.timeline-end {
+    background-color: revert;
+}
+
+.timeline-chapter {
+    padding: var(--text-padding);
+    font-family: raleway;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timeline-chapter-even {
+    text-align: left;
+}
+
+.timeline-chapter-odd {
+    text-align: right;
+}
+
+.timeline-title {
+    color: var(--color-main);
+    font-size: 0.8rem;
+}
+
+.timeline-text,
+.timeline-event {
+    color: var(--color-secondary);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+    .timeline {
+        --bullet-rotation: 90deg;
+        --text-odd-align: center;
+        --text-even-align: center;
+        grid-auto-flow: column;
+        grid-template-rows: 2fr 1fr 2fr;
+        grid-template-columns: revert;
+        grid-auto-columns: 1fr;
+    }
+    .timeline-bullet {
+        display: flex;
+    }
+    .timeline-line {
+        width: var(--line-length);
+        height: var(--line-width);
+    }
+    .timeline-chapter-even {
+        text-align: revert;
+        justify-content: flex-start;
+    }
+    .timeline-chapter-odd {
+        text-align: revert;
+        justify-content: flex-end;
+    }
+}
