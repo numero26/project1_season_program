@@ -73,7 +73,7 @@
     font-weight: bold;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
     .timeline {
         --bullet-rotation: 90deg;
         --text-odd-align: center;
