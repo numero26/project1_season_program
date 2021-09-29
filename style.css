@@ -1,9 +1,44 @@
 body {
-    font-family: 'Varela', sans-serif; ;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    color: white;
+    height: 303px;
+    background-image: url(./images/Vector.png);
 }
 
 .topPage {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
 
+#logo {
+	height: 40px;  
+    width: auto;
+
+}
+
+ul {
+    font-size: 20px;
+    list-style-type: none;
+    border-left: white solid 1px;
+    padding-left: 20px;
+
+}
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    margin: 0px;
+}
+
+h3 {
+    font-size: 1rem;
 }
