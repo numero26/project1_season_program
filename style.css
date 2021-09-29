@@ -6,8 +6,9 @@ body {
 
 header {
     color: white;
-    height: 303px;
+    height: 280px;
     background-image: url(./images/Vector.png);
+    background-size: 100% 280px;
 }
 
 .topPage {
