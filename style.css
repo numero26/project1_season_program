@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.0rem;
+    font-size: 1rem;
 }
 
 h3 {
@@ -66,4 +66,26 @@ h3 {
 
 #titreIntro {
     line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .title, .introduction {
+        width : 600px;
+    }
+    .introduction {
+        padding-top: 20px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .textIntro {
+        font-size: 0.9rem
+    }
 }
