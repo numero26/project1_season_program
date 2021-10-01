@@ -34,6 +34,7 @@ header {
     text-align: center;
     width: 250px;
     margin: 0 auto;
+    
 }
 
 h1 {
@@ -44,6 +45,7 @@ h1 {
 h2 {
     font-size: 1rem;
 }
+
 
 h3 {
     font-size: 0.8rem;
@@ -66,6 +68,94 @@ h3 {
     line-height: 1.5rem;
 }
 
+/* partie projet 1 */
+
+.borderTop{
+
+height:50px;
+background-image:url(images/background_top.png) ; 
+background-size:100% 100%;   
+}
+
+.borderBot{
+height:45px;
+background-image:url(images/background_bottom.png); 
+background-size:100% 100%;   
+}
+
+.projet{
+    color :white;
+    text-align: center;
+    flex-direction: column;
+    background-color:#f65454;
+}
+.projet h4 {
+    margin-top: 0;
+}
+.article p {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.article{
+    align-items: center;
+}
+.projetFictif h3 {
+    margin-left: 1rem;
+}
+
+.description_projet {
+    margin-top: 10px;
+    margin-bottom: 0;
+    
+}
+.projetFictif ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.projetFictif ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color:#f65454; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    
+}
+
+.chapter > h2{
+    text-align: center;
+    color: #888888;
+
+}
+.containerEvaluation{
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerEvaluation h2{
+    font-size: 0.8rem;
+    color:#f65454;
+    text-align: center;
+}
+.containerEvaluation p{
+    color:#888888;
+    font-size: 0.7rem;
+    text-align: center;
+}
+.containerEvaluation div {
+    margin: 20px;
+    width: 50%;
+}
+
+.containerSkill{
+display: flex;
+justify-content: space-around;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .title,
     .introduction {
@@ -86,6 +176,7 @@ h3 {
     .textIntro {
         font-size: 0.9rem
     }
+    
 }
 
 @media only screen and (min-width: 1024px) {
