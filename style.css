@@ -68,6 +68,45 @@ h3 {
     line-height: 1.5rem;
 }
 
+.topEventHackathon {
+    text-align: center;
+    background: linear-gradient( #fcd3d3, white);
+    padding-top: 3rem;
+    color: #f76C6C
+}
+
+#firstImageEvent {
+    width: 100%;
+
+}
+
+.eventCard {
+    border-radius: 50px;
+    background: linear-gradient(#f76C6C,#fcd3d3);
+    text-align: center;
+    padding-bottom: 1px;
+    margin: 30px 60px 30px 60px;
+    color: white;
+    display: inline-block;
+    width: min(300px, 100%);
+
+}
+
+.eventCardImg {
+    width: 70%;
+    padding-top: 1rem;
+}
+
+.bottomEventHackathon {
+    text-align: center;
+    background: linear-gradient( white, #fcd3d3);
+    padding: 0.8rem 0rem;
+    color: #f76C6C
+}
+
+
+
+
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 
     .title, .introduction {
@@ -86,13 +125,11 @@ h3 {
         font-size: 1rem;
     }
     .textIntro {
-        font-size: 0.9rem
+        font-size: 0.9rem;
     }
+
 }
 
-.eventHackathon {
-    text-align: center;
-}
 
 @media only screen and (min-width: 1024px) {
 
@@ -112,6 +149,9 @@ h3 {
         font-size: 1rem;
     }
     .textIntro {
-        font-size: 0.9rem
+        font-size: 0.9rem;
     }
+
+
+
 }
