@@ -170,7 +170,7 @@ h3 {
 
 .topEventHackathon {
     text-align: center;
-    background: linear-gradient(#fcd3d3, white);
+    background: linear-gradient(white, #fcd3d3 1%, white);
     padding-top: 1rem;
     color: #f76C6C
 }
