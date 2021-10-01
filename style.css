@@ -19,9 +19,8 @@ header {
 }
 
 #logo {
-	height: 35px;  
+    height: 35px;
     width: auto;
-
 }
 
 .season {
@@ -29,7 +28,6 @@ header {
     list-style-type: none;
     border-left: white solid 1px;
     padding-left: 20px;
-
 }
 
 .title {
@@ -68,29 +66,6 @@ h3 {
 
 #titreIntro {
     line-height: 1.5rem;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    
-    .title, .introduction {
-        width : 600px;
-    }
-    .introduction {
-        padding-top: 20px;
-    }
-    h1 {
-        font-size: 2.5rem;
-    }
-    h2 {
-        font-size: 1.8rem;
-    }
-    h3 {
-        font-size: 1rem;
-    }
-    .textIntro {
-        font-size: 0.9rem
-    }
-    
 }
 
 /* partie projet 1 */
@@ -181,11 +156,33 @@ display: flex;
 justify-content: space-around;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .title,
+    .introduction {
+        width: 600px;
+    }
+    .introduction {
+        padding-top: 20px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .textIntro {
+        font-size: 0.9rem
+    }
+    
+}
 
 @media only screen and (min-width: 1024px) {
-    
-    .title, .introduction {
-        width : 1000px;
+    .title,
+    .introduction {
+        width: 1000px;
     }
     .introduction {
         padding-top: 20px;
