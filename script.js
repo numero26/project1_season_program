@@ -97,6 +97,7 @@ for (let i = 0; i < chapters.length; ++i) {
     let phDiv = document.createElement('div');
     phDiv.classList.add("timeline-ph");
 
+    // Add divs to the parent grid
     if (i % 2 === 1) {
         timeline.appendChild(phDiv);
         timeline.appendChild(bulletDiv);
@@ -107,6 +108,7 @@ for (let i = 0; i < chapters.length; ++i) {
         timeline.appendChild(phDiv);
     }
 
+    // Create tooltip
     const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
     const dateBeginStr = (new Date(dateBegin)).toLocaleDateString(undefined, options);
     const dateEndStr = (new Date(dateEnd)).toLocaleDateString(undefined, options);
