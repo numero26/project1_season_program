@@ -188,7 +188,7 @@ h3 {
     color: #f76C6C
 }
 
-#firstImageEvent {
+.firstImageEvent {
     width: min(90%, 800px);
 }
 
