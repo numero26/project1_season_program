@@ -84,6 +84,7 @@ for (let i = 0; i < chapters.length; ++i) {
     let percent = (now - dateBegin) * 100 / (dateEnd - dateBegin);
     percent = Math.max(Math.round(percent), 0) + "%";
     circleDiv.style.setProperty('--fill-percent', percent);
+    circleDiv.id = "timeline-circle-tippy" + i;
     bulletDiv.appendChild(circleDiv);
 
     let lineEnd = document.createElement('div');
@@ -105,4 +106,11 @@ for (let i = 0; i < chapters.length; ++i) {
         timeline.appendChild(bulletDiv);
         timeline.appendChild(phDiv);
     }
+
+    const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
+    const dateBeginStr = (new Date(dateBegin)).toLocaleDateString(undefined, options);
+    const dateEndStr = (new Date(dateEnd)).toLocaleDateString(undefined, options);
+    tippy("#" + circleDiv.id, {
+        content: "Du " + dateBeginStr + " au " + dateEndStr + ".",
+    });
 }
