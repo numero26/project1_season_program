@@ -68,6 +68,7 @@ for (let i = 0; i < chapters.length; ++i) {
     // Creating bullet
     let bulletDiv = document.createElement('div');
     bulletDiv.classList.add("timeline-bullet");
+    bulletDiv.id = "timeline-bullet" + i;
 
     let lineStart = document.createElement('div');
     lineStart.classList.add("timeline-line");
@@ -84,7 +85,6 @@ for (let i = 0; i < chapters.length; ++i) {
     let percent = (now - dateBegin) * 100 / (dateEnd - dateBegin);
     percent = Math.max(Math.round(percent), 0) + "%";
     circleDiv.style.setProperty('--fill-percent', percent);
-    circleDiv.id = "timeline-circle-tippy" + i;
     bulletDiv.appendChild(circleDiv);
 
     let lineEnd = document.createElement('div');
@@ -112,7 +112,8 @@ for (let i = 0; i < chapters.length; ++i) {
     const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
     const dateBeginStr = (new Date(dateBegin)).toLocaleDateString(undefined, options);
     const dateEndStr = (new Date(dateEnd)).toLocaleDateString(undefined, options);
-    tippy("#" + circleDiv.id, {
+    tippy("#" + bulletDiv.id, {
         content: "Du " + dateBeginStr + " au " + dateEndStr + ".",
+        placement: i % 2 === 0 ? "bottom" : "top",
     });
 }
