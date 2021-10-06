@@ -221,6 +221,24 @@ iframe {
     text-align: center;
 }
 
+.video-responsive {
+    padding-bottom: calc(0.5625 * min(560px, 95%));
+    position: relative;
+    height: 0;
+    width: min(560px, 95%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: min(560px, 100%);
+    position: absolute;
+    box-sizing: border-box;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .title,
     .introduction {
