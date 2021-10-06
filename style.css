@@ -188,8 +188,10 @@ h3 {
     color: #f76C6C
 }
 
-.firstImageEvent {
-    width: min(90%, 800px);
+iframe {
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #f76C6C;
 }
 
 .eventCard {
