@@ -141,6 +141,7 @@ h3 {
 .containerEvaluation {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .containerEvaluation h2 {
@@ -154,8 +155,8 @@ h3 {
 }
 
 .containerEvaluation div {
-    margin: 20px;
-    width: 50%;
+    margin: 1rem;
+    width: 30%;
 }
 
 .containerSkill {
