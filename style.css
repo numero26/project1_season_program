@@ -190,6 +190,7 @@ h3 {
 }
 
 iframe {
+    border: 0;
     padding: 5px;
     border-radius: 50px;
     background-color: #f76C6C;
