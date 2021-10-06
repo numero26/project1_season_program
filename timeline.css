@@ -21,6 +21,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-auto-rows: 4rem;
+    padding-bottom: 5rem;
 }
 
 .timeline-line {
