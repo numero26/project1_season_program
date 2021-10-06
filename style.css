@@ -53,8 +53,8 @@ h3 {
 .introduction {
     color: #888888;
     text-align: center;
-    width: 250px;
     margin: 0 auto;
+    padding : 0 1rem;
     position: relative;
     top: -30px;
 
@@ -62,7 +62,7 @@ h3 {
 
 .textIntro {
     font-size: 1rem;
-    margin: 2.5rem;
+    margin: 2.5rem 0;
 }
 
 #titreIntro {
@@ -106,36 +106,9 @@ h3 {
     margin: 0 1rem;
 }
 
-.projetFictif h3 {
-    margin-left: 1rem;
-}
-
 .description_projet {
     margin-top: 10px;
     margin-bottom: 0;
-}
-
-.projetFictif ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    margin-bottom: 10px;
-}
-
-.projetFictif ul li::before {
-    content: "\2022";
-    /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #f65454;
-    /* Change the color */
-    font-weight: bold;
-    /* If you want it to be bold */
-    display: inline-block;
-    /* Needed to add space between the bullet and the text */
-    width: 1em;
-    /* Also needed for space (tweak if needed) */
-    margin-left: -1em;
-    /* Also needed for space (tweak if needed) */
 }
 
 .chapter>h2 {
